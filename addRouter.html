@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
+	<title>addRouter</title>
+</head>
+<body>
+<div id="app">
+	<router-link to="/foo">foo</router-link>
+	<router-link to="/bar">bar</router-link>
+	<router-link to="/menus">menus</router-link>
+	<h1>
+		<router-view></router-view>
+	</h1>
+</div>
+
+<script type="text/javascript" src="../../js/vue.js"></script>
+<script type="text/javascript" src="../../js/vue-router.js"></script>
+<script type="text/javascript">
+const foo = {template: '<div>foo<h1><router-view></router-view></h1></div>'};
+const bar = {template: '<div>bar</div>'};
+const menus = {template: '<div>menus</div>'};
+const index = {template: '<div>index<h1><router-view></router-view></h1></div>'};
+const error = {template: '<div>error</div>'};
+
+
+const routes = [
+	{path: '/foo', component: foo,children:[{path:'menus',component: menus}]},
+	{path: '/bar', component: bar}
+];
+
+const router = new VueRouter({
+	routes
+})
+
+var extendRoute = [
+	{
+      path: '/',
+      name: '首页',
+      component: index,
+      children: [
+      {
+        path: 'menus',
+        component: menus
+      }
+      ]
+    },
+	{path: '/*', component: error}
+];
+
+
+var app = new Vue({
+	el:"#app",
+	router
+})
+
+app.$router.addRoutes(extendRoute)
+// app.$router.push({path:'/'})
+
+</script>
+</body>
+</html>
