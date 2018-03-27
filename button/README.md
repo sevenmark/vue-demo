@@ -1,3 +1,5 @@
+#参照bootstrap组件创建的基于的button组件
+
 ![效果图](https://github.com/sevenmark/vue-demo/blob/master/button/Screenshots/20180327214032.png)
 
 > A Vue.js project
