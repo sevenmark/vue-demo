@@ -1,4 +1,4 @@
-![效果图](https://github.com/sevenmark/vue-demo/button/master/Screenshots/20180327214032.png)
+![效果图](https://github.com/sevenmark/vue-demo/blob/master/button/Screenshots/20180327214032.png)
 
 > A Vue.js project
 
