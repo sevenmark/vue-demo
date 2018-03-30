@@ -1,6 +1,15 @@
 # my-project
 
-> A Vue.js project
+> 练习:
+> axios.$http.get(url).then()
+> axios.$http.post(url, params).then()
+> axios.interceptors.request.use()
+> axios.interceptors.response.use()
+
+> 解决POST请求后台接收不到数据的问题
+> var params = new URLSearchParams()
+> params.append(key, value)
+> axios.$http.post(url, params).then()
 
 ## Build Setup
 
