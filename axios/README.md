@@ -1,5 +1,6 @@
 # my-project
 
+``` bash
 > 练习:
 > axios.$http.get(url).then()
 > axios.$http.post(url, params).then()
@@ -10,6 +11,7 @@
 > var params = new URLSearchParams()
 > params.append(key, value)
 > axios.$http.post(url, params).then()
+```
 
 ## Build Setup
 
