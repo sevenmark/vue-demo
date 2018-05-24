@@ -8,14 +8,14 @@ CA系统软件包
 
 
 ```
-ssh -i 密钥.pem ubuntu@ec2-52-83-236-233.cn-northwest-1.compute.amazonaws.com.cn
+ssh -i 密钥.pem ubuntu@host
 ```
 
 
 
 ### 第一步，连接服务器：
 
-ssh -i 密钥.pem ubuntu@ec2-52-83-236-233.cn-northwest-1.compute.amazonaws.com.cn
+ssh -i 密钥.pem ubuntu@host
 
 (此处需要注意 密钥.pem 的权限，修改权限的命令 chmod 400 密钥.pem)
 
