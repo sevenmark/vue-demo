@@ -8,7 +8,7 @@
       "btnText",
       "btnType",
       "btnBlock",
-      "btnSize"
+      "btnSizetest"
     ],
     computed: {
       buttonType: function(){
